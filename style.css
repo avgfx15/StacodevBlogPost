@@ -31,8 +31,10 @@
   width: 85%;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .companyData {
@@ -109,7 +111,7 @@
 
 .welcomeContainer {
   width: 100%;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   background: url('Images/465105008.webp') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -153,3 +155,241 @@
 }
 
 /* Welcome Container Style End  */
+
+/* Product List Container Style Start */
+
+.productsListContainer {
+  width: 100%;
+  /* min-height: calc(100vh - 80px); */
+  margin: 40px 0;
+}
+
+.productsListBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.productsListTitle {
+  font-size: 2rem;
+  color: #343a40;
+  margin: 20px 0;
+}
+
+.productsListItems {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.productCard {
+  position: relative;
+  width: 300px;
+  height: 550px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  background-color: #e9ecef;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productDetails {
+  padding: 15px;
+}
+
+.productTitle {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.productCompanyName {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.productDescription {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 20px;
+  /* set 4 lines of text and then add ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.priceBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.mrpPrice {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.crossMRP {
+  text-decoration: line-through;
+}
+
+.deliveryText {
+  font-size: 0.9rem;
+  color: #28a745;
+  margin-top: 10px;
+}
+
+.readMoreLink {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  /* set button at bottom of card and make it look like a button */
+  position: absolute;
+  bottom: 15px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.readMoreLink:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Product List Container Style End */
+
+/* Recent Products Container Style Start  */
+
+.recentProductContainer {
+  width: 100%;
+  margin: 40px 0;
+  background-color: #c5cdd6;
+  /* min-height: calc(100vh - 80px); */
+}
+
+.recentProductBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.recentProductTitle {
+  font-size: 2rem;
+  color: #343a40;
+  margin: 20px 0;
+}
+
+.recentProductItems {
+  width: 100%;
+}
+
+.recentProductCard {
+  /* position: relative; */
+  width: 100%;
+  height: 350px;
+  display: flex;
+  gap: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.recentProductCard:hover {
+  transform: translateY(-5px);
+}
+
+.recentProductImage {
+  min-width: 400px;
+  height: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+}
+
+.recentProductImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recentProductDetails {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recentProductName {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.recentProductCompanyName {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+  .navContainer {
+    height: auto;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  .productsListItems,
+  .recentProductItems {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsListItems,
+  .recentProductItems {
+    justify-content: center;
+  }
+}
