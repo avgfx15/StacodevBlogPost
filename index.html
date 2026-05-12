@@ -13,14 +13,19 @@
         <div class="navbar">
           <div class="companyData">
             <div class="logo">Logo</div>
-            <div class="companyName"><h1 class="cName">Stacodev</h1></div>
+            <div class="companyName">
+              <h1 class="cName">Stacodev</h1>
+            </div>
           </div>
           <div class="navLinks">
             <ul class="navList">
-              <li class="navItem"><a href="#">Home</a></li>
-              <li class="navItem"><a href="#">About Us</a></li>
-              <li class="navItem"><a href="#">Blog</a></li>
-              <li class="navItem"><a href="#">Contact Us</a></li>
+              <li class="navItem"><a href="#Home">Home</a></li>
+              <li class="navItem"><a href="#postList">posts</a></li>
+              <li class="navItem">
+                <a href="#Recentpost">Recent posts</a>
+              </li>
+              <li class="navItem"><a href="#AboutUs">About Us</a></li>
+              <li class="navItem"><a href="#ContactUs">Contact Us</a></li>
             </ul>
           </div>
           <div class="search">
@@ -40,55 +45,49 @@
           template to create your own blog posts.
         </p>
         <div class="contactUsBtn">
-          <a href="#" class="contactUsLink">Contact Us</a>
+          <a href="#ContactUs" class="contactUsLink">Contact Us</a>
         </div>
       </div>
 
       <!-- Welcome Container End  -->
 
-      <!-- Products List Container Start -->
+      <!-- posts List Container Start -->
 
-      <div class="productsListContainer">
-        <div class="productsListBox">
-          <h1 class="productsListTitle">All Products</h1>
-          <div class="productsListItems">
-            <div class="productCard">
-              <div class="productImage">
-                <img src="Images/1184199.jpg" alt="Product Image" />
+      <div class="postsListContainer" id="postList">
+        <div class="postsListBox">
+          <h1 class="postsListTitle">All posts</h1>
+          <div class="postsListItems">
+            <div class="postCard">
+              <div class="postImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="productDetails">
-                <h2 class="productTitle">Product Title</h2>
+              <div class="postDetails">
+                <h2 class="postTitle">Post Title</h2>
 
-                <p class="productCompanyName">Company Name</p>
-                <p class="productDescription">
+                <p class="postCompanyName">Tag Line</p>
+                <p class="postDescription">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Error perspiciatis dolor iste saepe quod non neque sequi
                   sapiente totam quisquam.
                 </p>
-                <div class="priceBox">
-                  <p class="productPrice"><sup>₹</sup>250.00</p>
-                  <p class="mrpPrice">
-                    M.R.P.
-                    <sup class="currencySymbol">₹</sup>
-                    <span class="crossMRP">500.00</span>
-                  </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
                 </div>
-                <p class="deliveryText">
-                  FREE delivery Thu, 14 May Or fastest delivery Today 6 pm -
-                  10 pm
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
             </div>
-            <div class="productCard">
-              <div class="productImage">
-                <img src="Images/1184199.jpg" alt="Product Image" />
+            <div class="postCard">
+              <div class="postImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="productDetails">
-                <h2 class="productTitle">Product Title</h2>
+              <div class="postDetails">
+                <h2 class="postTitle">Post Title</h2>
 
-                <p class="productCompanyName">Company Name</p>
-                <p class="productDescription">
+                <p class="postCompanyName">Tag Line</p>
+                <p class="postDescription">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                   vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
                   provident, enim doloribus quaerat unde tempora consequatur
@@ -96,107 +95,83 @@
                   quo quae blanditiis, suscipit esse incidunt quisquam libero
                   voluptas.
                 </p>
-                <div class="priceBox">
-                  <p class="productPrice"><sup>₹</sup>250.00</p>
-                  <p class="mrpPrice">
-                    M.R.P.
-                    <sup class="currencySymbol">₹</sup>
-                    <span class="crossMRP">500.00</span>
-                  </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
                 </div>
-                <p class="deliveryText">
-                  FREE delivery Thu, 14 May Or fastest delivery Today 6 pm -
-                  10 pm
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
             </div>
-            <div class="productCard">
-              <div class="productImage">
-                <img src="Images/1184199.jpg" alt="Product Image" />
+            <div class="postCard">
+              <div class="postImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="productDetails">
-                <h2 class="productTitle">Product Title</h2>
+              <div class="postDetails">
+                <h2 class="postTitle">Post Title</h2>
 
-                <p class="productCompanyName">Company Name</p>
-                <p class="productDescription">
+                <p class="postCompanyName">Tag Line</p>
+                <p class="postDescription">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo in similique expedita adipisci asperiores optio
                   maiores ducimus voluptates rem. Assumenda blanditiis ducimus
                   natus, mollitia reiciendis voluptatem corporis asperiores
                   eligendi veniam, delectus possimus ratione provident sint?
                 </p>
-                <div class="priceBox">
-                  <p class="productPrice"><sup>₹</sup>250.00</p>
-                  <p class="mrpPrice">
-                    M.R.P.
-                    <sup class="currencySymbol">₹</sup>
-                    <span class="crossMRP">500.00</span>
-                  </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
                 </div>
-                <p class="deliveryText">
-                  FREE delivery Thu, 14 May Or fastest delivery Today 6 pm -
-                  10 pm
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
             </div>
-            <div class="productCard">
-              <div class="productImage">
-                <img src="Images/1184199.jpg" alt="Product Image" />
+            <div class="postCard">
+              <div class="postImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="productDetails">
-                <h2 class="productTitle">Product Title</h2>
+              <div class="postDetails">
+                <h2 class="postTitle">Post Title</h2>
 
-                <p class="productCompanyName">Company Name</p>
-                <p class="productDescription">
+                <p class="postCompanyName">Tag Line</p>
+                <p class="postDescription">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo in similique expedita adipisci asperiores optio
                   maiores ducimus voluptates rem. Assumenda blanditiis ducimus
                   natus, mollitia reiciendis voluptatem corporis asperiores
                   eligendi veniam, delectus possimus ratione provident sint?
                 </p>
-                <div class="priceBox">
-                  <p class="productPrice"><sup>₹</sup>250.00</p>
-                  <p class="mrpPrice">
-                    M.R.P.
-                    <sup class="currencySymbol">₹</sup>
-                    <span class="crossMRP">500.00</span>
-                  </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
                 </div>
-                <p class="deliveryText">
-                  FREE delivery Thu, 14 May Or fastest delivery Today 6 pm -
-                  10 pm
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
             </div>
-            <div class="productCard">
-              <div class="productImage">
-                <img src="Images/1184199.jpg" alt="Product Image" />
+            <div class="postCard">
+              <div class="postImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="productDetails">
-                <h2 class="productTitle">Product Title</h2>
+              <div class="postDetails">
+                <h2 class="postTitle">Post Title</h2>
 
-                <p class="productCompanyName">Company Name</p>
-                <p class="productDescription">
+                <p class="postCompanyName">Tag Line</p>
+                <p class="postDescription">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Explicabo in similique expedita adipisci asperiores optio
                   maiores ducimus voluptates rem. Assumenda blanditiis ducimus
                   natus, mollitia reiciendis voluptatem corporis asperiores
                   eligendi veniam, delectus possimus ratione provident sint?
                 </p>
-                <div class="priceBox">
-                  <p class="productPrice"><sup>₹</sup>250.00</p>
-                  <p class="mrpPrice">
-                    M.R.P.
-                    <sup class="currencySymbol">₹</sup>
-                    <span class="crossMRP">500.00</span>
-                  </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
                 </div>
-                <p class="deliveryText">
-                  FREE delivery Thu, 14 May Or fastest delivery Today 6 pm -
-                  10 pm
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
@@ -205,60 +180,206 @@
         </div>
       </div>
 
-      <!-- Products List Container End -->
+      <!-- posts List Container End -->
 
-      <!-- Recent Products Container Start -->
+      <!-- Recent posts Container Start -->
 
-      <div class="recentProductContainer">
-        <div class="recentProductBox">
-          <h1 class="recentProductTitle">Recent Products</h1>
-          <div class="recentProductItems">
-            <div class="recentProductCard">
-              <div class="recentProductImage">
-                <img src="Images/1184199.jpg" alt="Recent Product Image" />
+      <div class="recentpostContainer" id="Recentpost">
+        <div class="recentpostBox">
+          <h1 class="recentpostTitle">Recent posts</h1>
+          <div class="recentpostItems">
+            <div class="recentpostCard">
+              <div class="recentpostImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
               </div>
-              <div class="recentProductDetails">
-                <h2 class="recentProductName">Recent Product Title</h2>
-                <p class="recentProductCompanyName">Company Name</p>
-                <p class="recentProductDescription">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
-                  provident, enim doloribus quaerat unde tempora consequatur
-                  explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
-                  quo quae blanditiis, suscipit esse incidunt quisquam libero
-                  voluptas.
+              <div class="recentpostDetails">
+                <h2 class="recentpostTitle">Post Title</h2>
+
+                <p class="recentpostCompanyName">Tag Line</p>
+                <p class="recentpostDescription">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Error perspiciatis dolor iste saepe quod non neque sequi
+                  sapiente totam quisquam.
+                </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
+                </div>
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
                 </p>
                 <a href="#" class="readMoreLink">Read More</a>
               </div>
             </div>
-            <!-- Add more recent product cards as needed -->
+            <div class="recentpostCard">
+              <div class="recentpostImage">
+                <img src="Images/1184199.jpg" alt="post Image" />
+              </div>
+              <div class="recentpostDetails">
+                <h2 class="recentpostTitle">Post Title</h2>
+
+                <p class="recentpostCompanyName">Tag Line</p>
+                <p class="recentpostDescription">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Error perspiciatis dolor iste saepe quod non neque sequi
+                  sapiente totam quisquam.
+                </p>
+                <div class="locationBox">
+                  <p class="postLocation">Location: New York, USA</p>
+                </div>
+                <p class="visitingText">
+                  Visiting Hours: 9:00 AM - 5:00 PM, Monday to Friday
+                </p>
+                <a href="#" class="readMoreLink">Read More</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Recent Products Container End  -->
+      <!-- Recent posts Container End  -->
 
-      <div class="aboutUs"></div>
-      <div class="reviewBox"></div>
-      <div class="contactUs"></div>
-      <div class="footer"></div>
-      <!-- <h1>Welcome to Stacodev Blog!</h1>
-      <p>
-        This is a sample blog post created using HTML. You can customize this
-        template to create your own blog posts.
-      </p>
-      <h2>About Stacodev</h2>
-      <p>
-        Stacodev is a platform for developers to share their knowledge and
-        experiences. We provide tutorials, articles, and resources on various
-        programming languages and technologies.
-      </p>
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or would like to contribute to our blog,
-        please feel free to contact us at
-        <a href="mailto:info@stacodev.com">info@stacodev.com</a>.
-      </p> -->
+      <!-- About Us Container Start  -->
+
+      <div class="aboutUsContainer" id="AboutUs">
+        <div class="aboutUsBox">
+          <div class="aboutHead">
+            <h1 class="aboutUsTitle">About Stacodev</h1>
+            <p class="aboutUsText">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+              accusantium nihil sint ea rem voluptatum dolores, vel commodi
+              inventore, eos ut quis, cum voluptatem eligendi! Facilis
+              dignissimos quam temporibus sapiente tenetur voluptas doloremque
+              sint minus architecto possimus repellat similique molestias sunt
+              error ullam sequi dicta, corrupti eius repudiandae animi fuga.
+            </p>
+          </div>
+          <div class="aboutGoal">
+            <div class="ourMission">
+              <h2 class="ourMissionTitle">Our Mission</h2>
+              <p class="ourMissionText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas.
+              </p>
+            </div>
+            <div class="ourVision">
+              <h2 class="ourVisionTitle">Our Vision</h2>
+              <p class="ourVisionText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas.
+              </p>
+            </div>
+            <div class="ourValues">
+              <h2 class="ourValuesTitle">Our Values</h2>
+              <p class="ourValuesText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us Container End  -->
+
+      <!-- Reviews Container Start  -->
+      <div class="reviewContainer">
+        <div class="reviewBox">
+          <h1 class="reviewTitle">Customer Reviews</h1>
+          <div class="reviewItems">
+            <div class="reviewCard">
+              <p class="reviewText">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas."
+              </p>
+              <p class="reviewAuthor">- John Doe</p>
+            </div>
+            <div class="reviewCard">
+              <p class="reviewText">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas."
+              </p>
+              <p class="reviewAuthor">- Jane Smith</p>
+            </div>
+            <div class="reviewCard">
+              <p class="reviewText">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                vitae commodi consequuntur ad voluptatibus dicta? Nihil nam
+                provident, enim doloribus quaerat unde tempora consequatur
+                explicabo laboriosam, temporibus sint. Voluptatem cum eveniet
+                quo quae blanditiis, suscipit esse incidunt quisquam libero
+                voluptas."
+              </p>
+              <p class="reviewAuthor">- Alice Johnson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reviews Container End  -->
+
+      <!-- Contact Us Container Start  -->
+
+      <div class="contactUsContainer" id="ContactUs">
+        <div class="contactUsBox">
+          <h1 class="contactUsTitle">Contact Us</h1>
+          <p class="contactUsText">
+            If you have any questions or would like to contribute to our blog,
+            please feel free to contact us at
+          </p>
+
+          <div class="contactUsForm">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="contactUsInput"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="contactUsInput"
+              required
+            />
+            <textarea
+              placeholder="Your Message"
+              class="contactUsTextarea"
+              required
+            ></textarea>
+            <button class="contactUsButton">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us Container End   -->
+
+      <!-- Footer Container Start   -->
+      <div class="footerContainer">
+        <p class="footerText">
+          &copy; 2024 Stacodev. All rights reserved. | Designed by Stacodev
+        </p>
+      </div>
+
+      <!-- Footer Container End   -->
     </div>
   </body>
 </html>

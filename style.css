@@ -156,16 +156,17 @@
 
 /* Welcome Container Style End  */
 
-/* Product List Container Style Start */
+/* post List Container Style Start */
 
-.productsListContainer {
+.postsListContainer {
   width: 100%;
   /* min-height: calc(100vh - 80px); */
-  margin: 40px 0;
+  background-color: #a0adba;
 }
 
-.productsListBox {
+.postsListBox {
   width: 85%;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -174,24 +175,23 @@
   gap: 20px;
 }
 
-.productsListTitle {
+.postsListTitle {
   font-size: 2rem;
   color: #343a40;
   margin: 20px 0;
 }
 
-.productsListItems {
+.postsListItems {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   gap: 20px;
-  justify-content: space-between;
+
 }
 
-.productCard {
+.postCard {
   position: relative;
-  width: 300px;
-  height: 550px;
+  height: 525px;
   background-color: #f8f9fa;
   border-radius: 5px;
   overflow: hidden;
@@ -199,39 +199,39 @@
   transition: transform 0.3s ease;
 }
 
-.productCard:hover {
+.postCard:hover {
   transform: translateY(-5px);
 }
 
-.productImage {
+.postImage {
   width: 100%;
   height: 200px;
   background-color: #e9ecef;
 }
 
-.productImage img {
+.postImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.productDetails {
+.postDetails {
   padding: 15px;
 }
 
-.productTitle {
+.postTitle {
   font-size: 1.5rem;
   color: #343a40;
   margin-bottom: 10px;
 }
 
-.productCompanyName {
+.postCompanyName {
   font-size: 1rem;
   color: #6c757d;
   margin-bottom: 10px;
 }
 
-.productDescription {
+.postDescription {
   font-size: 1rem;
   color: #495057;
   margin-bottom: 20px;
@@ -242,32 +242,22 @@
   overflow: hidden;
 }
 
-.priceBox {
+.locationBox {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
-
-.productPrice {
-  font-size: 1.2rem;
-  color: #343a40;
+.postLocation {
+  font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 10px;
+  color: #1666be;
 }
 
-.mrpPrice {
-  font-size: 1.2rem;
-  color: #6c757d;
-}
-
-.crossMRP {
-  text-decoration: line-through;
-}
-
-.deliveryText {
+.visitingText {
   font-size: 0.9rem;
   color: #28a745;
-  margin-top: 10px;
 }
 
 .readMoreLink {
@@ -291,18 +281,18 @@
   color: #fff;
 }
 
-/* Product List Container Style End */
+/* post List Container Style End */
 
-/* Recent Products Container Style Start  */
+/* Recent posts Container Style Start  */
 
-.recentProductContainer {
+.recentpostContainer {
   width: 100%;
-  margin: 40px 0;
-  background-color: #c5cdd6;
-  /* min-height: calc(100vh - 80px); */
+  height: auto;
+  background-color: #dadfe4;
+  /* border: 2px solid #55148f; */
 }
 
-.recentProductBox {
+.recentpostBox {
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -312,20 +302,23 @@
   gap: 20px;
 }
 
-.recentProductTitle {
+.recentpostTitle {
   font-size: 2rem;
   color: #343a40;
   margin: 20px 0;
 }
 
-.recentProductItems {
+.recentpostItems {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.recentProductCard {
-  /* position: relative; */
+.recentpostCard {
+  position: relative;
   width: 100%;
-  height: 350px;
+  height: 275px;
+  margin-bottom: 1rem;
   display: flex;
   gap: 20px;
   background-color: #f8f9fa;
@@ -335,11 +328,11 @@
   transition: transform 0.3s ease;
 }
 
-.recentProductCard:hover {
+.recentpostCard:hover {
   transform: translateY(-5px);
 }
 
-.recentProductImage {
+.recentpostImage {
   min-width: 400px;
   height: 100%;
   padding: 8px;
@@ -347,30 +340,264 @@
   background-color: #e9ecef;
 }
 
-.recentProductImage img {
+.recentpostImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.recentProductDetails {
-  padding: 15px;
+.recentpostDetails {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 15px;
 }
 
-.recentProductName {
+.recentpostTitle {
   font-size: 1.5rem;
   color: #343a40;
   margin-bottom: 10px;
 }
 
-.recentProductCompanyName {
+.recentpostCompanyName {
   font-size: 1rem;
   color: #6c757d;
   margin-bottom: 10px;
 }
+
+/* Recent post Style End */
+
+/* About Us Container Style Start  */
+
+.aboutUsContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #95a4b3;
+  /* border: 2px solid #55148f; */
+}
+
+.aboutUsBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.aboutHeading {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.aboutUsTitle {
+  font-size: 2rem;
+  color: #343a40;
+  text-align: center;
+}
+
+.aboutUsText {
+  font-size: 1rem;
+  color: #384045;
+  text-align: justify;
+}
+
+.aboutGoal {
+  width: 100%;
+  height: auto;
+  margin : 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.ourMission,
+.ourVision,
+.ourValues {
+  width: 400px;
+  height: auto;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.ourMissionTitle,
+.ourVisionTitle,
+.ourValuesTitle {
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #45525f;
+  color: #dde0e3;
+  text-align: center;
+  font-size: 1.5rem;
+  fot-weight: bold;
+}
+
+.ourMissionText,
+.ourVisionText,
+.ourValuesText {
+  padding: 15px;
+  font-size: 1rem;
+  color: #495057;
+  text-align: justify;
+}
+
+/* About Us Container Style End  */
+
+
+/* Reviews Container Start */
+
+
+.reviewContainer {
+  width: 100%;
+  height: auto;
+  background-color: #e6e9ec;
+  /* border: 2px solid #55148f; */
+}
+
+.reviewBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.reviewTitle {
+  font-size: 2rem;
+  color: #343a40;
+  text-align: center;
+}
+
+.reviewItems {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reviewCard {
+  width: 300px;
+  height: auto;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.reviewText {
+  font-size: 1rem;
+  color: #495057;
+  text-align: justify;
+}
+
+.reviewAuthor {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #181b1d;
+  text-align: right;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Review Container End  */
+
+/* Contact Us Container Start   */
+
+.contactUsContainer {
+  width: 100%;
+  height: auto;
+  background-color: #cfd4db;
+  /* border: 2px solid #55148f; */
+}
+
+.contactUsBox {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.contactUsTitle {
+  font-size: 2rem;
+  color: #343a40;
+  text-align: center;
+}
+
+.contactUsText {
+  font-size: 1rem;
+  color: #495057;
+  text-align: justify;
+}
+
+.contactUsForm {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactUsInput,
+.contactUsTextarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contactUsButton {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contactUsButton:hover {
+  background-color: #000000;
+}
+
+.contactUsTextarea {
+  height: 150px;
+}
+
+/* Contact Us Container End   */
+
+/* Footer Container Start */
+
+.footerContainer {
+  width: 100%;
+  height: auto;
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.footerText {
+  font-size: 1rem;
+  text-align: center;
+}
+
 
 /* Media Queries for Responsiveness */
 
@@ -381,15 +608,40 @@
   .navbar {
     justify-content: center;
   }
-  .productsListItems,
-  .recentProductItems {
+  .postsListItems,
+  .recentpostItems {
     justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  .productsListItems,
-  .recentProductItems {
+@media (max-width: 845px) {
+  .postsListItems,
+  .recentpostItems {
     justify-content: center;
   }
+  .postCard {
+    width: 100%;
+  }
+  .recentpostCard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recentpostImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .recentpostDetails {
+    width: 100%;
+    padding: 15px;
+  }
+
+
+.ourMission,
+.ourVision,
+.ourValues {
+  width: 100%;
 }
